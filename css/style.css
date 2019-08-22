@@ -1,0 +1,47 @@
+.top-bar {
+    background-color: #FFFFFF;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 20px 0px;
+    
+}
+
+.top-bar ul {
+    list-style: none;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+
+.top-bar li {
+    display: inline;
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.hero {
+    background: url(../media/portfolio\ background.png) no-repeat 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 210px 0;
+    color: #fff;
+    position: relative;
+}
+
+.hero_info img {
+    position: absolute;
+    top: 0px;left: 0;
+    transform: rotate(270deg);
+}
+
+.hero_text h1,h2 {
+    text-align: center;
+}
+
+.hero li img {
+    width: 32px;
+    height: 32px;
+}
+
+
