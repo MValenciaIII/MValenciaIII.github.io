@@ -41,7 +41,10 @@
 
 .top-bar a {
     text-decoration: none;
-    color: rgb(109, 109, 109)
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(109, 109, 109);
+    transition: .5s;
 }
 
 .top-bar a:hover {
@@ -85,7 +88,7 @@
 
 .hero_info img {
     position: absolute;
-    top: 200px;left: 0;
+    top: 50px;left: 0;
     animation-name: sliding_myself;
     animation-duration: 5s;
     animation-delay: 2s;
@@ -99,15 +102,15 @@
         transform: translateY(0)
     }
     25% {
-        transform: translateY(350px);
+        transform: translateY(50px);
         opacity: .75;
     }
     50% {
-        transform: translateY(-140px); 
-        opacity: .75;
+        transform: translateY(-100px); 
+        opacity: 1;
     }
     75%{
-        transform: translateY(-140px);
+        transform: translateY(-100px);
         opacity: 1;
     }
     100% {
@@ -124,10 +127,12 @@
 .hero_text ul {
     list-style: none;
     text-align: center;
+    margin-right: 60px;
 }
 
 .hero_text li {
     display: inline;
+    padding-left: 20px;
 }
 
 .hero li img {
@@ -136,12 +141,23 @@
 }
 
 .about {
-    background-color: #FFFFFF;
+    padding-top: 50px;
+    background-color: #f4f3f1;
     z-index: 4;
 }
 
-.description {
-    z-index: 3;
+.description h2 {
+    padding: 30px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #7DD1F4
 }
 
+.description p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 2;
+    color: rgb(109, 109, 109)
+}
 
+.coffee_picture {
+}
