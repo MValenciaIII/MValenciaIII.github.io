@@ -20,7 +20,7 @@
 }
 
 .top-bar li {
-    color: black;
+    color: #555;
     font-family: 'Roboto', sans-serif;
     display: inline;
     font-size: 25px;
@@ -43,7 +43,7 @@
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    color: rgb(109, 109, 109);
+    color: #555;
     transition: .5s;
 }
 
@@ -53,7 +53,7 @@
 
 .logo {
     padding: 10px 15px;
-    border: solid 4px rgb(66, 66, 66);
+    border: solid 4px #555;
     outline: 2px solid rgb(109, 109, 109);
     outline-offset: 4px;
 }
@@ -76,7 +76,7 @@
     color: #fff;
     padding: 290px 0;
     position: relative;
-    background: url(../media/portfolio\ background.png) no-repeat 50%;
+    background: url(../media/portfolio\ background@2x.png) no-repeat 50%;
     background-size: cover;
     background-attachment: fixed;
     z-index: 1;
@@ -88,40 +88,48 @@
 
 .hero_info img {
     position: absolute;
-    top: 50px;left: 0;
-    animation-name: sliding_myself;
-    animation-duration: 5s;
-    animation-delay: 2s;
-    animation-timing-function: cubic-bezier(10s, 4s, 10s, 2s);
+    top: -60px;left: 0;
+    animation-name: opacity;
+    animation-duration: 1s;
     z-index: 1;
-    opacity: 0;
+    opacity: 1;
+    background: #7DD1F4;
+    border: 12px solid #fff;
 }
 
-@keyframes sliding_myself {
+@keyframes opacity {
     0% {
-        transform: translateY(0)
+        opacity: 0;
     }
     25% {
-        transform: translateY(50px);
-        opacity: .75;
+        opacity: .25;
     }
-    50% {
-        transform: translateY(-100px); 
-        opacity: 1;
+    50% { 
+        opacity: 50;
     }
     75%{
-        transform: translateY(-100px);
-        opacity: 1;
+        opacity: .75;
     }
-    100% {
-        transform: translateY(0px);
-        opacity: 0;
+    100% {    
+        opacity: 1;
     }
 
 }
 
 .hero_text h1,h2 {
     text-align: center;
+}
+
+.hero_text h1 {
+    font-family: 'Acme', sans-serif;
+    font-size: 40px;
+    color: #7DD1F4
+}
+
+.hero_text h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
 }
 
 .hero_text ul {
@@ -156,8 +164,41 @@
 .description p {
     font-family: 'Roboto', sans-serif;
     line-height: 2;
-    color: rgb(109, 109, 109)
+    color: rgb(109, 109, 109);
+}
+
+.description ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.description li {
+    color:  rgb(109, 109, 109);
+}
+
+.description h3 {
+    color: #7DD1F4;
 }
 
 .coffee_picture {
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+.skills_img {
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .coffee_picture {
+        display: none;
+    }
+    .skills_img {
+        display: none;
+    }
+    .hero_info img {
+        display: none;
+    }
 }
