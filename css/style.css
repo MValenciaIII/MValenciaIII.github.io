@@ -1,6 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .top-bar {
     background-color: #FFFFFF;
-    position: fixed;
+    position: sticky;
     width: 100%;
     z-index: 10;
     padding: 20px 0px;
@@ -151,7 +155,7 @@
 .about {
     padding-top: 50px;
     background-color: #f4f3f1;
-    z-index: 4;
+    padding-bottom: 171px;
 }
 
 .description h2 {
@@ -202,3 +206,47 @@
         display: none;
     }
 }
+
+.projects img {
+    margin: 10px;
+    border: solid 10px #555;
+}
+
+@media (max-width: 768px) {
+    .projects img {
+        margin: 20px 0;
+        border: solid 10px #555;
+    }
+}
+
+.detroix:hover .overlay {
+    width: 100%;
+  }
+
+  .airbox:hover .overlay {
+    width: 100%;
+  }
+
+  .bloom:hover .overlay {
+    width: 100%;
+  }
+  
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #888;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+    opacity: .65;
+}
+
+.detroix img {
+    position: relative;
+}
+
+
