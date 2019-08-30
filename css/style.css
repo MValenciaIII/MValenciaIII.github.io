@@ -1,6 +1,6 @@
-html {
+/* html {
     scroll-behavior: smooth;
-}
+} */
 
 .top-bar {
     background-color: #FFFFFF;
@@ -93,30 +93,9 @@ html {
 .hero_info img {
     position: absolute;
     top: -60px;left: 0;
-    animation-name: opacity;
-    animation-duration: 1s;
     z-index: 1;
     background: #7DD1F4;
     border: 12px solid #fff;
-}
-
-@keyframes opacity {
-    0% {
-        opacity: 0;
-    }
-    25% {
-        opacity: .25;
-    }
-    50% { 
-        opacity: 50;
-    }
-    75%{
-        opacity: .75;
-    }
-    100% {    
-        opacity: 1;
-    }
-
 }
 
 .hero_text h1,h2 {
@@ -155,6 +134,7 @@ html {
     padding-top: 50px;
     background-color: #f4f3f1;
     padding-bottom: 171px;
+    box-shadow: inset 0 0 4px #000000;
 }
 
 .description h2 {
@@ -206,6 +186,10 @@ html {
     }
 }
 
+.projects {
+    background-color: #f4f3f1;
+}
+
 .projects img {
     margin: 10px;
     border: solid 4px #888;
@@ -225,15 +209,19 @@ html {
 }
 
 .detroix:hover .overlay {
-    width: 91%;
+    width: 90.5%;
   }
 
   .airbox:hover .overlay {
-    width: 91%;
+    width: 90.5%;
   }
 
   .bloom:hover .overlay {
-    width: 91%;
+    width: 90.5%;
+  }
+
+  .venedor:hover .overlay {
+      width: 90.5%;
   }
   
   .projects h2 {
@@ -248,10 +236,10 @@ html {
     bottom: 14px;
     left: 29px;
     right: 0;
-    background-color: #888;
+    background-color: #fff;
     overflow: hidden;
     width: 0;
-    height: 87%;
+    height: 86%;
     transition: .5s ease;
     opacity: .80;
 }
@@ -274,6 +262,10 @@ html {
       .bloom:hover .overlay {
         width: 94%;
       }
+      .venedor:hover .overlay {
+        width: 94%;
+    }
+    
 }
 
 .text {
@@ -306,6 +298,7 @@ html {
     color: black;
     padding: 8px 10px;
     border-radius: 12px;
+    transition: .5s;
   }
 
   .website {
@@ -318,6 +311,7 @@ html {
     color: black;
     padding: 8px 10px;
     border-radius: 12px;
+    transition: .5s;
   }
 
   @media (max-width: 768px) {
@@ -359,6 +353,7 @@ html {
 .contact {
     margin-top: 30px;
     background-color: #f4f3f1;
+    box-shadow: inset 0 0 4px #000000;
 }
 
 .contact h2 {
