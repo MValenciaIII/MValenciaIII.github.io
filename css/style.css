@@ -350,31 +350,27 @@
     margin-top: -15px;
 }
 
-footer {
+.contact {
     margin-top: 30px;
-    background-color: #f4f3f1;
+    background-color: #888;
     box-shadow: inset 0 0 4px #000000;
 }
 
+.contact h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #7DD1F4;
+}
 
-footer img {
+.contact img {
     width: 24px;
     height: 24px;
 }
 
-footer ul {
-    padding-top: 30px;
-    text-align: center;
+.contact ul {
     list-style: none;
 }
 
-footer li {
+.contact li {
     display: inline;
-    padding: 0px 10px;
-}
-
-.social_media {
-    background-color: #7DD1F4;
-    width: 100%;
-    height: auto;
 }
