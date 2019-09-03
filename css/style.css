@@ -1,6 +1,6 @@
-/* html {
+html {
     scroll-behavior: smooth;
-} */
+}
 
 .top-bar {
     background-color: #FFFFFF;
@@ -26,8 +26,8 @@
 .top-bar li {
     color: #555;
     font-family: 'Roboto', sans-serif;
-    display: inline;
     font-size: 25px;
+    display: inline;
     padding-left: 20px;
 }
 
@@ -44,10 +44,10 @@
 }
 
 .top-bar a {
+    color: #555;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    color: #555;
     transition: .5s;
 }
 
@@ -56,10 +56,10 @@
 }
 
 .logo {
-    padding: 10px 15px;
     border: solid 4px #555;
     outline: 2px solid rgb(109, 109, 109);
     outline-offset: 4px;
+    padding: 10px 15px;
 }
 
 .logo h1 {
@@ -78,12 +78,12 @@
 
 .hero {
     color: #fff;
-    padding: 290px 0;
-    position: relative;
     background: url(../media/portfolio\ background@2x.png) no-repeat 50%;
+    position: relative;
     background-size: cover;
     background-attachment: fixed;
     z-index: 1;
+    padding: 290px 0;
 }
 
 @media (max-width: 768px) {
@@ -91,11 +91,11 @@
 }
 
 .hero_info img {
-    position: absolute;
-    top: -60px;left: 0;
-    z-index: 1;
     background: #7DD1F4;
+    position: absolute;
     border: 12px solid #fff;
+    z-index: 1;
+    top: -60px;left: 0;
 }
 
 .hero_text h1,h2 {
@@ -131,17 +131,17 @@
 }
 
 .about {
-    padding-top: 50px;
     background-color: #f4f3f1;
-    padding-bottom: 171px;
     box-shadow: inset 0 0 4px #000000;
+    padding-bottom: 171px;
+    padding-top: 50px;
 }
 
 .description h2 {
-    padding: 30px 0;
+    color: #7DD1F4;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    color: #7DD1F4;
+    padding: 30px 0;
 }
 
 .description p {
@@ -191,21 +191,21 @@
 }
 
 .projects img {
-    margin: 10px;
     border: solid 4px #888;
     box-shadow: 3px 3px 5px 6px #ccc;
+    margin: 10px;
 }
 
 @media (max-width: 768px) {
     .projects img {
-        margin: 20px 0;
         border: solid 10px #555;
+        margin: 20px 0;
     }
 }
 
 .projects h2 {
-    font-weight: bold;
     color: #7DD1F4;
+    font-weight: bold;
 }
 
 .detroix:hover .overlay {
@@ -351,9 +351,19 @@
 }
 
 footer {
-    margin-top: 30px;
-    background-color: #f4f3f1;
+    background-color: #7DD1F4;
     box-shadow: inset 0 0 4px #000000;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+footer a:hover {
+    color: #f4f3f1;
+    text-decoration: none;
 }
 
 
@@ -373,8 +383,13 @@ footer li {
     padding: 0px 10px;
 }
 
-.social_media {
-    background-color: #7DD1F4;
-    width: 100%;
-    height: auto;
+footer h3 {
+    color: white;
+
 }
+
+.phone h3 {
+    float: right;
+}
+
+
