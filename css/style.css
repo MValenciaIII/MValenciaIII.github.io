@@ -312,24 +312,24 @@ html {
 
     }
     .overlay {
-        height: 78.5%;
+        height: 80.5%;
 
       }
 
       .detroix:hover .overlay {
-        width: 88.5%;
+        width: 89.5;
       }
     
       .airbox:hover .overlay {
-        width: 88.5%;
+        width: 89.5;
       }
     
       .bloom:hover .overlay {
-        width: 88.5%;
+        width: 89.5;
       }
     
       .venedor:hover .overlay {
-          width: 88.5%;
+          width: 89.5;
       }
 }
 
