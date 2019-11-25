@@ -224,9 +224,6 @@ html {
       width: 90.5%;
   }
 
-  .simpleCalculator:hover .overlay {
-    width: 90.5;
-}
   
   .projects h2 {
     padding: 30px 0;
@@ -348,6 +345,11 @@ html {
       .simpleCalculator:hover .overlay {
         width: 89.5;
     }
+}
+
+.imgFix img {
+    width: 359px;
+    height: 182px;
 }
 
 .detroix img {
