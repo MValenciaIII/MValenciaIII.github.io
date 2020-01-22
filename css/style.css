@@ -3,7 +3,7 @@ html {
 }
 
 .top-bar {
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
     position: sticky;
     width: 100%;
     z-index: 10;
